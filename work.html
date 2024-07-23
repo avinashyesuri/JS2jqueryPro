@@ -14,6 +14,20 @@
     .c3{
         font-style: italic;
     }
+    #div-wr1{
+        background-color: brown;
+        padding: 30px;
+        color: white;
+        height: 200px;
+        width: 200px;
+    }
+    #div-wr2{
+        background-color: rgb(56, 42, 165);
+        padding: 30px;
+        color: white;
+ 
+        width: 200px;
+    }
  </style>
 </head>
 <body>
@@ -95,12 +109,83 @@
         <button style="padding: 20px; margin: 10px;" id="prepend">prepend</button>
         <button style="padding: 20px; margin: 10px;" id="after">after</button>
         <button style="padding: 20px; margin: 10px;" id="before">before</button>
+        <button style="padding: 20px; margin: 10px;" id="empty">empty </button>
+        <button style="padding: 20px; margin: 10px;" id="remove">remove</button>
+        <button style="padding: 20px; margin: 10px;" id="clone">clone</button>
+    </div>
+    <div style="margin-top:10px; padding:10px;">
+        <select id="states"> 
+            <option value="1">Selectcategory</option>
+            <option id="RES" value="AP">andhar</option>
+            <option id="RES" value="TN">nadu</option>
+            <option id="RES" value="MAHA">rastra</option>
+        </select>
+       <div>
+        <button type="submit" id="stateSubmit">Submit</button>
+        <h1 id="sttres"></h1>
+       </div> 
+    </div>
+    <div>
+        <input id ="selMeth" placeholder="enter name" type="text"/>
+        <button type="submit" id="stasub1">Submit</button>
     </div>
 
+    <div id="replace-main" style="margin: 20px; padding:20px; height:350px; width:300px; background-color:green;color: black; border:1px solid red">
+        <p id="p-replace1">Hi this is jQuery class no 3</p>
+        <p id="p-replace2">Hi this is jQuery class no 4</p>
+        <p id="p-replace3">Hi this is jQuery class no 5</p>
+        <p id="p-replace4">Hi this is jQuery class no 5</p>
+    </div>
+
+    <button id="replace-clone" style="margin:10px; padding: 20px;">clone here!</button>
+    <button id="replace-replace" style="margin:10px; padding: 20px;">replace here!</button>
+    <button id="replace-remove" style="margin:10px; padding: 20px;">remove here!</button>
+    <button id="replace-all" style="margin:10px; padding: 20px;">replace all!</button>
+<div>
+
+
+    <button style="margin:10px;" id="btn-wr1">wrap</button>
+    <button style="margin:10px;" id="btn-wr2">unwrap</button>
 
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <div id="replace-main" style="margin: 20px; padding:20px; height:250px; width:300px; background-color:green;color: black; border:1px solid red">
+        <p id="p-w1">Hi this is jQuery class no 3</p>
+        <p id="p-w">Hi this is jQuery class no 4</p>
+        <p id="p-w">Hi this is jQuery class no 5</p>
+        <p id="p-w">Hi this is jQuery class no 5</p>
+    </div>
+    <button style="margin:10px;" id="btn-wr3">wrapall</button>
+    <button style="margin:10px;" id="btn-wr4">wrapInner</button>
+</div>
+
+<div>
+    <ul >Each methodilogy</ul>
+    <h5 id="each-id">Mango</h5>
+    <h5 id="each-id">Apple</h5>
+    <h5 id="each-id">Bannan</h5>
+    <h5 id="each-id">Cherry</h5>
+    <h5 id="each-id">Litchy</h5>
+</div>
+
+
+
+<div>
+    <form action ="">
+        <label>Gender:</label>
+        <input type="radio" name="male" value="male"/>
+        <label>Male:</label>
+        <input type="radio" name="female" value="female"/>
+        <label>Female:</label>
+        <input type="button" value="submit" id="btn"/>
+
+    </form>
+    <br>
+    <div id="OutputDiv">
+
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="work.js"></script>
 </body>
 </html>

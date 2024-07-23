@@ -1,0 +1,446 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Methods Showcase</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4fcfcf;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+        section {
+            padding: 20px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            background-color: #eee;
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .button-group {
+            margin: 20px 0;
+        }
+        .button-group button {
+            margin-right: 10px;
+        }
+        .result-box {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>jQuery Methods Showcase</h1>
+    </header>
+    <section class="container">
+        <h2>Selectors and CSS Manipulation</h2>
+        <button id="click">Apply Styles</button>
+        <ul>
+            <li>Item 1</li>
+            <li id="v2">22-07-2024 .. 17:16PM</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li class="v1">JQUERY ALL THE WAY</li>
+        </ul>
+    </section>
+    <section class="container">
+        <h2>Hide and Show Effects</h2>
+        <button id="hide">Hide List</button>
+        <button id="show">Show List</button>
+        <ul>
+            <li>Item A</li>
+            <li>Item B</li>
+            <li>Item C</li>
+        </ul>
+    </section>
+    <section class="container">
+        <h2>Event Handling</h2>
+        <p class="para">Hi, I am Avinash</p>
+        <div class="button-group">
+            <button id="event1">Click</button>
+            <button id="event2">Right Click</button>
+            <button id="event3">Double Click</button>
+            <button id="event4">Mouse Enter</button>
+            <button id="event5">Mouse Leave</button>
+        </div>
+    </section>
+    <section class="container">
+        <h2>Content Manipulation</h2>
+        <div class="result-box" id="result-box">Result will be displayed here</div>
+        <button id="get-content">Get Content</button>
+        <button id="set-content">Set Content</button>
+    </section>
+    <section class="container">
+        <h2>DOM Manipulation</h2>
+        <div id="dom-manipulation">
+            <h3>Manipulate Me!</h3>
+        </div>
+        <div class="button-group">
+            <button id="append">Append</button>
+            <button id="prepend">Prepend</button>
+            <button id="after">After</button>
+            <button id="before">Before</button>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        // Selectors and CSS Manipulation
+        $(document).ready(function() {
+            $("#click").click(function() {
+                $(".v1, #v2").css("color", "blue");
+                $("h3").css("font-size", "36px");
+                $("h3").css("color", "red");
+                $("p:first").css("color", "red");
+                $("li:even").css("color", "orange");
+                $("li:even").css("font-weight", "bolder");
+            });
+        });
+
+        // Hide and Show Effects
+        $(document).ready(function() {
+            $("#hide").click(function() {
+                $("ul li").hide("slow");
+            });
+            $("#show").click(function() {
+                $("ul li").show("fast");
+            });
+        });
+
+        // Event Handling
+        $(document).ready(function() {
+            $("#event1").click(function() {
+                $(".para").css("color", "green");
+            });
+            $("#event2").contextmenu(function() {
+                $(".para").css("color", "blue");
+            });
+            $("#event3").dblclick(function() {
+                $(".para").css("color", "red");
+            });
+            $("#event4").mouseenter(function() {
+                $(".para").css("color", "purple");
+            });
+            $("#event5").mouseleave(function() {
+                $(".para").css("color", "orange");
+            });
+        });
+
+        // Content Manipulation
+        $(document).ready(function() {
+            $("#get-content").click(function() {
+                var content = $("#result-box").text();
+                alert(content);
+            });
+            $("#set-content").click(function() {
+                $("#result-box").text("This is new content set by jQuery.");
+            });
+        });
+
+        // DOM Manipulation
+        $(document).ready(function() {
+            $("#append").click(function() {
+                $("#dom-manipulation").append("<p>Appended content.</p>");
+            });
+            $("#prepend").click(function() {
+                $("#dom-manipulation").prepend("<p>Prepended content.</p>");
+            });
+            $("#after").click(function() {
+                $("#dom-manipulation").after("<p>Content after element.</p>");
+            });
+            $("#before").click(function() {
+                $("#dom-manipulation").before("<p>Content before element.</p>");
+            });
+        });
+    </script>
+</body>
+</html> -->
+Sure, I'll incorporate your new methods and organize the code to include the previous examples as well. Here's the complete jQuery showcase with the additional methods:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Methods Showcase</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4fcfcf;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+        section {
+            padding: 20px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            background-color: #eee;
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .button-group {
+            margin: 20px 0;
+        }
+        .button-group button {
+            margin-right: 10px;
+        }
+        .result-box {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>jQuery Methods Showcase</h1>
+    </header>
+    <section class="container">
+        <h2>Selectors and CSS Manipulation</h2>
+        <button id="click">Apply Styles</button>
+        <ul>
+            <li>Item 1</li>
+            <li id="v2">22-07-2024 .. 17:16PM</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li class="v1">JQUERY ALL THE WAY</li>
+        </ul>
+    </section>
+    <section class="container">
+        <h2>Hide and Show Effects</h2>
+        <button id="hide">Hide List</button>
+        <button id="show">Show List</button>
+        <ul>
+            <li>Item A</li>
+            <li>Item B</li>
+            <li>Item C</li>
+        </ul>
+    </section>
+    <section class="container">
+        <h2>Event Handling</h2>
+        <p class="para">Hi, I am Avinash</p>
+        <div class="button-group">
+            <button id="event1">Click</button>
+            <button id="event2">Right Click</button>
+            <button id="event3">Double Click</button>
+            <button id="event4">Mouse Enter</button>
+            <button id="event5">Mouse Leave</button>
+            <button id="event6">Mouse Events</button>
+        </div>
+    </section>
+    <section class="container">
+        <h2>Content Manipulation</h2>
+        <div class="result-box" id="result-box">Result will be displayed here</div>
+        <button id="get-content">Get Content</button>
+        <button id="set-content">Set Content</button>
+    </section>
+    <section class="container">
+        <h2>DOM Manipulation</h2>
+        <div id="dom-manipulation">
+            <h3>Manipulate Me!</h3>
+        </div>
+        <div class="button-group">
+            <button id="append">Append</button>
+            <button id="prepend">Prepend</button>
+            <button id="after">After</button>
+            <button id="before">Before</button>
+            <button id="empty">Empty</button>
+            <button id="remove">Remove</button>
+            <button id="clone">Clone</button>
+        </div>
+    </section>
+    <section class="container">
+        <h2>Wrap Methods</h2>
+        <div id="wrap-content">
+            <p>Paragraph 1</p>
+            <p>Paragraph 2</p>
+        </div>
+        <div class="button-group">
+            <button id="btn-wrap">Wrap</button>
+            <button id="btn-unwrap">Unwrap</button>
+            <button id="btn-wrap-all">Wrap All</button>
+            <button id="btn-wrap-inner">Wrap Inner</button>
+        </div>
+    </section>
+    <section class="container">
+        <h2>Each Method</h2>
+        <h5>Apple</h5>
+        <h5>Banana</h5>
+        <h5>Cherry</h5>
+        <h5>Date</h5>
+        <button id="btn-each">Each</button>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        // Selectors and CSS Manipulation
+        $(document).ready(function() {
+            $("#click").click(function() {
+                $(".v1, #v2").css("color", "blue");
+                $("h3").css("font-size", "36px").css("color", "red");
+                $("p:first").css("color", "red");
+                $("li:even").css("color", "orange").css("font-weight", "bolder");
+            });
+        });
+
+        // Hide and Show Effects
+        $(document).ready(function() {
+            $("#hide").click(function() {
+                $("ul li").hide("slow");
+            });
+            $("#show").click(function() {
+                $("ul li").show("fast");
+            });
+        });
+
+        // Event Handling
+        $(document).ready(function() {
+            $("#event1").click(function() {
+                $(".para").css("color", "green");
+            });
+            $("#event2").contextmenu(function() {
+                $(".para").css("color", "blue");
+                return false;
+            });
+            $("#event3").dblclick(function() {
+                $(".para").css("color", "red");
+            });
+            $("#event4").mouseenter(function() {
+                $(".para").css("color", "purple");
+            });
+            $("#event5").mouseleave(function() {
+                $(".para").css("color", "orange");
+            });
+            $("#event6").on({
+                mouseenter: function() {
+                    $(".para").css("background-color", "orange");
+                },
+                mouseleave: function() {
+                    $(".para").css("background-color", "pink");
+                },
+                mousedown: function() {
+                    $(".para").css("background-color", "red");
+                }
+            });
+        });
+
+        // Content Manipulation
+        $(document).ready(function() {
+            $("#get-content").click(function() {
+                var content = $("#result-box").text();
+                alert(content);
+            });
+            $("#set-content").click(function() {
+                $("#result-box").text("This is new content set by jQuery.");
+            });
+        });
+
+        // DOM Manipulation
+        $(document).ready(function() {
+            $("#append").click(function() {
+                $("#dom-manipulation").append("<p>Appended content.</p>");
+            });
+            $("#prepend").click(function() {
+                $("#dom-manipulation").prepend("<p>Prepended content.</p>");
+            });
+            $("#after").click(function() {
+                $("#dom-manipulation").after("<p>Content after element.</p>");
+            });
+            $("#before").click(function() {
+                $("#dom-manipulation").before("<p>Content before element.</p>");
+            });
+            $("#empty").click(function() {
+                $("#dom-manipulation").empty();
+            });
+            $("#remove").click(function() {
+                $("#dom-manipulation").remove();
+            });
+            $("#clone").click(function() {
+                $("#dom-manipulation").clone().appendTo("body");
+            });
+        });
+
+        // Wrap Methods
+        $(document).ready(function() {
+            $("#btn-wrap").click(function() {
+                $("p").wrap("<div class='wrapped'></div>");
+            });
+            $("#btn-unwrap").click(function() {
+                $("p").unwrap();
+            });
+            $("#btn-wrap-all").click(function() {
+                $("p").wrapAll("<div class='wrapped-all'></div>");
+            });
+            $("#btn-wrap-inner").click(function() {
+                $("p").wrapInner("<div class='wrapped-inner'></div>");
+            });
+        });
+
+        // Each Method
+        $(document).ready(function() {
+            $("#btn-each").click(function() {
+                $("h5").each(function(index, element) {
+                    if ($(element).text() == "Apple") {
+                        return false;
+                    } else {
+                        alert(index + " " + $(element).text());
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

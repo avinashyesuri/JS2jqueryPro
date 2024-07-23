@@ -172,20 +172,168 @@
         //     })   
         // })
 
-//append and prepend styling  ---------------------------------------------------------------------------------------------------
+//append and prepend empty and remove styling  ---------------------------------------------------------------------------------------------------
+// $(document).ready(function(){
+//     $("#append").click(function(){
+//         $("#enddir").append("<h1>Done APpend</h1>")
+//     })
+//     $("#prepend").click(function(){
+//         $("#enddir").prepend("<h1>Done prepend</h1>")
+//     })
+//     $("#after").click(function(){
+//         $("#enddir").after("<h1>Done after methodology</h1>")
+//     })
+//     $("#before").click(function(){
+//         $("#enddir").before("<h1>Done before methodology</h1>")
+//     })
+//         $("#empty").click(function(){
+//             $("#enddir").empty()
+//         })
+//         $("#remove").click(function(){
+//             $("#enddir").remove()
+//         })
+      
+//         $("#clone").click(function(){
+//             $("#enddir").clone().prepend("body")
+//         })
+
+  
+// })
+
+
+//select, change, submit   styling  ---------------------------------------------------------------------------------------------------
+// $(document).ready(function(){
+//     $("#stateSubmit").click(function(){
+//         var item = $("#states").val()
+//         if(item =="1"){
+//             alert("select item")
+//         }
+//         else{
+//             $("#sttres").text("hi u selected the   "+  item)
+        
+//         } 
+//     })
+  
+  
+// })
+// $(document).ready(function(){
+//     $("#states").change(function(){
+//         var item = $("#states").val()
+//         if(item =="1"){
+//             alert("select item")
+//         }
+//         else{
+//             $("#sttres").text("hi u selected the   "+  item)
+        
+//         } 
+//     })
+  
+  
+// })
+// $(document).ready(function(){
+//     $("#selMeth").select(function(){
+//        var limit =  $("#selMeth").val()
+//             alert("select item "+ limit)
+//     })
+// })
+// $(document).ready(function(){
+//     $("#stasub1").submit(function(){
+//        var limit =  $("#selMeth").val()
+//             alert("select item "+ limit)
+//     })
+// })
+
+
+// $(document).ready(function(){
+//     $("#stasub1").submit(function(){
+//        var limit =  $("#selMeth").val()
+//             alert("select item "+ limit)
+//     })
+// })
+
+
+
+
+
+
+
+
+// //repalceWith remove clone -------------------------------------------------------
+// $(document).ready(function() {
+//     $("#replace-clone").click(function() {
+//         // Clone the #replace-main div
+//         var clonedElement = $("#replace-main").clone();
+//         // Append the cloned element to the body or any other desired location
+//         $("body").append(clonedElement);
+//     });
+
+//     $("#replace-remove").click(function() {
+//         // Remove the #replace-main div
+//         $("#replace-main").remove();
+//     });
+
+//     $("#replace-replace").click(function() {
+//         // Replace the first #p-replace paragraph with new content
+//         $("#p-replace3").first().replaceWith("<h1>querying all the vals</h1>");
+//     });
+
+//     $("#replace-all").click(function() {
+//         // Replace the last #p-replace paragraph with new content
+//         $("<p>Hi this is jQuery class no 5</p>").replaceAll("#replace-main p:last-child");
+//     });
+// });
+
+
+
+//wrap wrapall wrapinner unwrap -------------------------------------------------------
+// $(document).ready(function() {
+//     $("#btn-wr1").click(function() {
+//          $("p").wrap("<div id='div-wr1'></div>");// each tag has itisown container
+//     });
+//     $("#btn-wr2").click(function() {
+//         $("p").unwrap();
+//    });
+//    $("#btn-wr3").click(function() {
+//     $("p").wrapAll("<div id='div-wr2'></div>");
+// }); //wrap all para tags in single contienr
+//    $("#btn-wr3").click(function() {
+//     $("#p-w1").wrapAll("<div id='div-wr2'></div>");
+// }); // wrap only selected ones 
+
+// $("#btn-wr4").click(function() {
+//     $("#p-w").wrapInner("<h1 >hi all </h1>");
+// }); // wrap only selected ones 
+// });
+
+
+
+
+//each method ----------------------------------------------------------------------------------------------------
+// $(document).ready(function() {
+//     $("h5").each(function(index,element) {
+//         //  alert(index + $(element).text())
+//         if($(element).text()=="cherry"){
+//             return false
+//         }
+      
+//             alert("don") 
+        
+        
+//     });
+//     alert(index + " " + $(element).text())
+// })
+
+
+// CHECKBOX METHOD 
 $(document).ready(function(){
-    $("#append").click(function(){
-        $("#enddir").append("<h1>Done APpend</h1>")
+    $("#btn").click(function(){
+        var option =$('input[type="radio"]:checked');
+        if(option.length > 0)
+        {
+            $('#outputDiv').html(option.val() + "is Checked.")
+        }
+        else{
+            $('#outputDiv').html("no radiobutton is selected") 
+        }
     })
-    $("#prepend").click(function(){
-        $("#enddir").prepend("<h1>Done prepend</h1>")
-    })
-    $("#after").click(function(){
-        $("#enddir").after("<h1>Done after methodology</h1>")
-    })
-    $("#before").click(function(){
-        $("#enddir").before("<h1>Done before methodology</h1>")
-    })
-  
-  
 })
