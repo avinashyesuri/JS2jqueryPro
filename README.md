@@ -10,3 +10,4 @@ all methods explained  in this jquery tutorial
 7.Each Method
 8.Checkbox
 9.slide methods are done
+10. animate moethods
