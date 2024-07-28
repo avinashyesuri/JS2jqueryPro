@@ -1,191 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jQuery Methods Showcase</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #4fcfcf;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        h1, h2, h3, p {
-            margin: 0;
-            padding: 0;
-        }
-        section {
-            padding: 20px;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        ul li {
-            background-color: #eee;
-            margin: 5px 0;
-            padding: 10px;
-            border: 1px solid #ddd;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: white;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .button-group {
-            margin: 20px 0;
-        }
-        .button-group button {
-            margin-right: 10px;
-        }
-        .result-box {
-            margin: 20px 0;
-            padding: 20px;
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>jQuery Methods Showcase</h1>
-    </header>
-    <section class="container">
-        <h2>Selectors and CSS Manipulation</h2>
-        <button id="click">Apply Styles</button>
-        <ul>
-            <li>Item 1</li>
-            <li id="v2">22-07-2024 .. 17:16PM</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
-            <li>Item 5</li>
-            <li class="v1">JQUERY ALL THE WAY</li>
-        </ul>
-    </section>
-    <section class="container">
-        <h2>Hide and Show Effects</h2>
-        <button id="hide">Hide List</button>
-        <button id="show">Show List</button>
-        <ul>
-            <li>Item A</li>
-            <li>Item B</li>
-            <li>Item C</li>
-        </ul>
-    </section>
-    <section class="container">
-        <h2>Event Handling</h2>
-        <p class="para">Hi, I am Avinash</p>
-        <div class="button-group">
-            <button id="event1">Click</button>
-            <button id="event2">Right Click</button>
-            <button id="event3">Double Click</button>
-            <button id="event4">Mouse Enter</button>
-            <button id="event5">Mouse Leave</button>
-        </div>
-    </section>
-    <section class="container">
-        <h2>Content Manipulation</h2>
-        <div class="result-box" id="result-box">Result will be displayed here</div>
-        <button id="get-content">Get Content</button>
-        <button id="set-content">Set Content</button>
-    </section>
-    <section class="container">
-        <h2>DOM Manipulation</h2>
-        <div id="dom-manipulation">
-            <h3>Manipulate Me!</h3>
-        </div>
-        <div class="button-group">
-            <button id="append">Append</button>
-            <button id="prepend">Prepend</button>
-            <button id="after">After</button>
-            <button id="before">Before</button>
-        </div>
-    </section>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script>
-        // Selectors and CSS Manipulation
-        $(document).ready(function() {
-            $("#click").click(function() {
-                $(".v1, #v2").css("color", "blue");
-                $("h3").css("font-size", "36px");
-                $("h3").css("color", "red");
-                $("p:first").css("color", "red");
-                $("li:even").css("color", "orange");
-                $("li:even").css("font-weight", "bolder");
-            });
-        });
-
-        // Hide and Show Effects
-        $(document).ready(function() {
-            $("#hide").click(function() {
-                $("ul li").hide("slow");
-            });
-            $("#show").click(function() {
-                $("ul li").show("fast");
-            });
-        });
-
-        // Event Handling
-        $(document).ready(function() {
-            $("#event1").click(function() {
-                $(".para").css("color", "green");
-            });
-            $("#event2").contextmenu(function() {
-                $(".para").css("color", "blue");
-            });
-            $("#event3").dblclick(function() {
-                $(".para").css("color", "red");
-            });
-            $("#event4").mouseenter(function() {
-                $(".para").css("color", "purple");
-            });
-            $("#event5").mouseleave(function() {
-                $(".para").css("color", "orange");
-            });
-        });
-
-        // Content Manipulation
-        $(document).ready(function() {
-            $("#get-content").click(function() {
-                var content = $("#result-box").text();
-                alert(content);
-            });
-            $("#set-content").click(function() {
-                $("#result-box").text("This is new content set by jQuery.");
-            });
-        });
-
-        // DOM Manipulation
-        $(document).ready(function() {
-            $("#append").click(function() {
-                $("#dom-manipulation").append("<p>Appended content.</p>");
-            });
-            $("#prepend").click(function() {
-                $("#dom-manipulation").prepend("<p>Prepended content.</p>");
-            });
-            $("#after").click(function() {
-                $("#dom-manipulation").after("<p>Content after element.</p>");
-            });
-            $("#before").click(function() {
-                $("#dom-manipulation").before("<p>Content before element.</p>");
-            });
-        });
-    </script>
-</body>
-</html> -->
-Sure, I'll incorporate your new methods and organize the code to include the previous examples as well. Here's the complete jQuery showcase with the additional methods:
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -242,6 +54,24 @@ Sure, I'll incorporate your new methods and organize the code to include the pre
             background-color: #f9f9f9;
             border: 1px solid #ddd;
         }
+        .explanation {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #e0e0e0;
+            border: 1px solid #ccc;
+        }
+        .toggle-btn {
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        .animate-box {
+            width: 100px;
+            height: 100px;
+            background-color: #4fcfcf;
+            margin: 10px 0;
+            position: relative;
+        }
     </style>
 </head>
 <body>
@@ -251,6 +81,10 @@ Sure, I'll incorporate your new methods and organize the code to include the pre
     <section class="container">
         <h2>Selectors and CSS Manipulation</h2>
         <button id="click">Apply Styles</button>
+        <span class="toggle-btn">▼</span>
+        <div class="explanation">
+            <p><strong>Selectors and CSS Manipulation:</strong> This functionality demonstrates how to use jQuery selectors to select and manipulate HTML elements. You can apply CSS styles to elements by targeting them with various selectors like class, id, element type, and pseudo-classes.</p>
+        </div>
         <ul>
             <li>Item 1</li>
             <li id="v2">22-07-2024 .. 17:16PM</li>
@@ -264,6 +98,10 @@ Sure, I'll incorporate your new methods and organize the code to include the pre
         <h2>Hide and Show Effects</h2>
         <button id="hide">Hide List</button>
         <button id="show">Show List</button>
+        <span class="toggle-btn">▼</span>
+        <div class="explanation">
+            <p><strong>Hide and Show Effects:</strong> This functionality shows how to use jQuery to hide and show HTML elements with smooth animations. The `hide` method hides elements with a sliding effect, while the `show` method reveals them.</p>
+        </div>
         <ul>
             <li>Item A</li>
             <li>Item B</li>
@@ -280,6 +118,10 @@ Sure, I'll incorporate your new methods and organize the code to include the pre
             <button id="event4">Mouse Enter</button>
             <button id="event5">Mouse Leave</button>
             <button id="event6">Mouse Events</button>
+            <span class="toggle-btn">▼</span>
+            <div class="explanation">
+                <p><strong>Event Handling:</strong> This functionality demonstrates how to handle different user interactions with jQuery. It includes events like click, right-click, double-click, mouse enter, mouse leave, and a combination of multiple mouse events.</p>
+            </div>
         </div>
     </section>
     <section class="container">
@@ -287,6 +129,10 @@ Sure, I'll incorporate your new methods and organize the code to include the pre
         <div class="result-box" id="result-box">Result will be displayed here</div>
         <button id="get-content">Get Content</button>
         <button id="set-content">Set Content</button>
+        <span class="toggle-btn">▼</span>
+        <div class="explanation">
+            <p><strong>Content Manipulation:</strong> This functionality shows how to get and set the content of HTML elements using jQuery. You can retrieve the text or HTML content of elements and set new content dynamically.</p>
+        </div>
     </section>
     <section class="container">
         <h2>DOM Manipulation</h2>
@@ -301,6 +147,10 @@ Sure, I'll incorporate your new methods and organize the code to include the pre
             <button id="empty">Empty</button>
             <button id="remove">Remove</button>
             <button id="clone">Clone</button>
+            <span class="toggle-btn">▼</span>
+            <div class="explanation">
+                <p><strong>DOM Manipulation:</strong> This functionality demonstrates various methods to manipulate the DOM using jQuery. Methods include appending, prepending, inserting content before or after elements, emptying element content, removing elements, and cloning elements.</p>
+            </div>
         </div>
     </section>
     <section class="container">
@@ -314,6 +164,10 @@ Sure, I'll incorporate your new methods and organize the code to include the pre
             <button id="btn-unwrap">Unwrap</button>
             <button id="btn-wrap-all">Wrap All</button>
             <button id="btn-wrap-inner">Wrap Inner</button>
+            <span class="toggle-btn">▼</span>
+            <div class="explanation">
+                <p><strong>Wrap Methods:</strong> This functionality shows how to use jQuery wrap methods to wrap HTML elements in a specified structure. You can wrap single or multiple elements, unwrap them, and wrap the inner content of elements.</p>
+            </div>
         </div>
     </section>
     <section class="container">
@@ -323,16 +177,71 @@ Sure, I'll incorporate your new methods and organize the code to include the pre
         <h5>Cherry</h5>
         <h5>Date</h5>
         <button id="btn-each">Each</button>
+        <span class="toggle-btn">▼</span>
+        <div class="explanation">
+            <p><strong>Each Method:</strong> This functionality demonstrates how to use the jQuery `each` method to iterate over a set of elements. It allows you to perform actions on each element individually within a collection.</p>
+        </div>
     </section>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <section class="container">
+        <h2>Chaining</h2>
+        <div class="animate-box"></div>
+        <button id="chain">Chain Methods</button>
+        <span class="toggle-btn">▼</span>
+        <div class="explanation">
+            <p><strong>Chaining:</strong> This functionality demonstrates how to chain multiple jQuery methods together. Chaining allows you to perform several actions on the same set of elements in a single line of code, making it more concise and readable.</p>
+        </div>
+    </section>
+    <section class="container">
+        <h2>Animate</h2>
+        <div class="animate-box"></div>
+        <button id="animate">Animate Box</button>
+        <span class="toggle-btn">▼</span>
+        <div class="explanation">
+            <p><strong>Animate:</strong> This functionality showcases the `animate` method in jQuery, which allows you to create custom animations. You can animate various CSS properties such as position, size, height, opacity, and more.</p>
+        </div>
+    </section>
+    <section class="container">
+        <h2>Delay</h2>
+        <div class="animate-box"></div>
+        <button id="delay">Animate with Delay</button>
+        <span class="toggle-btn">▼</span>
+        <div class="explanation">
+            <p><strong>Delay:</strong> This functionality demonstrates how to use the `delay` method in jQuery to delay the execution of subsequent animations in the queue. It allows you to create timed pauses between animations.</p>
+        </div>
+    </section>
+    <section class="container">
+        <h2>Callback</h2>
+        <div class="animate-box"></div>
+        <button id="callback">Animate with Callback</button>
+        <span class="toggle-btn">▼</span>
+        <div class="explanation">
+            <p><strong>Callback:</strong> This functionality shows how to use callbacks in jQuery animations. A callback function is executed after the animation completes, allowing you to perform additional actions when the animation finishes.</p>
+        </div>
+    </section>
+    <section class="container">
+        <h2>Stop</h2>
+        <div class="animate-box"></div>
+        <button id="start-animation">Start Animation</button>
+        <button id="stop-animation">Stop Animation</button>
+        <span class="toggle-btn">▼</span>
+        <div class="explanation">
+            <p><strong>Stop:</strong> This functionality demonstrates how to use the `stop` method in jQuery to stop animations that are currently running. It allows you to halt animations before they complete.</p>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         // Selectors and CSS Manipulation
         $(document).ready(function() {
             $("#click").click(function() {
-                $(".v1, #v2").css("color", "blue");
-                $("h3").css("font-size", "36px").css("color", "red");
-                $("p:first").css("color", "red");
-                $("li:even").css("color", "orange").css("font-weight", "bolder");
+                $("#v2").css("color", "red");
+                $(".v1").css({
+                    "background-color": "yellow",
+                    "font-size": "20px",
+                    "border": "2px solid black"
+                });
+            });
+            $(".toggle-btn").click(function() {
+                $(this).next(".explanation").slideToggle("slow");
             });
         });
 
@@ -342,37 +251,37 @@ Sure, I'll incorporate your new methods and organize the code to include the pre
                 $("ul li").hide("slow");
             });
             $("#show").click(function() {
-                $("ul li").show("fast");
+                $("ul li").show("slow");
             });
         });
 
         // Event Handling
         $(document).ready(function() {
             $("#event1").click(function() {
-                $(".para").css("color", "green");
+                $(".para").css("color", "red");
             });
             $("#event2").contextmenu(function() {
                 $(".para").css("color", "blue");
                 return false;
             });
             $("#event3").dblclick(function() {
-                $(".para").css("color", "red");
+                $(".para").css("color", "green");
             });
             $("#event4").mouseenter(function() {
-                $(".para").css("color", "purple");
+                $(".para").css("color", "yellow");
             });
             $("#event5").mouseleave(function() {
-                $(".para").css("color", "orange");
+                $(".para").css("color", "purple");
             });
             $("#event6").on({
                 mouseenter: function() {
-                    $(".para").css("background-color", "orange");
+                    $(".para").css("color", "yellow");
                 },
                 mouseleave: function() {
-                    $(".para").css("background-color", "pink");
+                    $(".para").css("color", "purple");
                 },
-                mousedown: function() {
-                    $(".para").css("background-color", "red");
+                click: function() {
+                    $(".para").css("color", "red");
                 }
             });
         });
@@ -381,10 +290,10 @@ Sure, I'll incorporate your new methods and organize the code to include the pre
         $(document).ready(function() {
             $("#get-content").click(function() {
                 var content = $("#result-box").text();
-                alert(content);
+                alert("Content: " + content);
             });
             $("#set-content").click(function() {
-                $("#result-box").text("This is new content set by jQuery.");
+                $("#result-box").text("Content has been set!");
             });
         });
 
@@ -441,6 +350,77 @@ Sure, I'll incorporate your new methods and organize the code to include the pre
                 });
             });
         });
+
+        // Chaining
+        $(document).ready(function() {
+            $("#chain").click(function() {
+                $(".animate-box").css("background-color", "blue")
+                    .slideUp(2000)
+                    .slideDown(2000);
+            });
+        });
+
+        // Animate
+        $(document).ready(function() {
+            $("#animate").click(function() {
+                $(".animate-box").animate({
+                    left: '250px',
+                    opacity: '0.5',
+                    height: '150px',
+                    width: '150px'
+                });
+            });
+        });
+
+        // Delay
+        $(document).ready(function() {
+            $("#delay").click(function() {
+                $(".animate-box").animate({
+                    left: '250px',
+                    opacity: '0.5',
+                    height: '150px',
+                    width: '150px'
+                }).delay(2000).animate({
+                    left: '0px',
+                    opacity: '1',
+                    height: '100px',
+                    width: '100px'
+                });
+            });
+        });
+
+        // Callback
+        $(document).ready(function() {
+            $("#callback").click(function() {
+                $(".animate-box").animate({
+                    left: '250px',
+                    opacity: '0.5',
+                    height: '150px',
+                    width: '150px'
+                }, function() {
+                    alert("Animation complete!");
+                });
+            });
+        });
+
+        // Stop
+        $(document).ready(function() {
+            $("#start-animation").click(function() {
+                $(".animate-box").animate({left: '250px'}, 5000);
+            });
+            $("#stop-animation").click(function() {
+                $(".animate-box").stop();
+            });
+        });
+
+        // Slide Toggle for Explanation
+        $(document).ready(function() {
+    $(".toggle-btn").click(function() {
+        const explanation = $(this).next(".explanation");
+        explanation.slideDown("slow");
+    });
+});
+
     </script>
 </body>
 </html>

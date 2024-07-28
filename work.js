@@ -325,15 +325,29 @@
 
 
 // CHECKBOX METHOD 
+// $(document).ready(function(){
+//     $("#btn").click(function(){
+//         var option =$('input[type="radio"]:checked');
+//         if(option.length > 0)
+//         {
+//             $('#outputDiv').html(option.val() + "is Checked.")
+//         }
+//         else{
+//             $('#outputDiv').html("no radiobutton is selected") 
+//         }
+//     })
+// })
+
+
+//slide methods
 $(document).ready(function(){
-    $("#btn").click(function(){
-        var option =$('input[type="radio"]:checked');
-        if(option.length > 0)
-        {
-            $('#outputDiv').html(option.val() + "is Checked.")
-        }
-        else{
-            $('#outputDiv').html("no radiobutton is selected") 
-        }
+    $("#slide-id").click(function(){
+       $("#slide-cont").slideToggle(5000)
     })
+    $("#fade-id").click(function(){
+        $("#fade-cont").fadeToggle(5000)
+     })
+     $("#disp-id").click(function(){
+        $("#dipsla-cont").toggle(5000)
+     })
 })
