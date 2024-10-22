@@ -22,5 +22,6 @@ All methods explained  in this jquery tutorial
 
 10.Animate moethods like(animate,delay,chaining, stop,caallback) 
 
+
 ![image](https://github.com/user-attachments/assets/46697388-d6d9-45be-ad33-13e679303a19)
 
