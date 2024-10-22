@@ -240,10 +240,11 @@
                     "border": "2px solid black"
                 });
             });
-            $(".toggle-btn").click(function() {
-                $(this).next(".explanation").slideToggle("slow");
+                $(".toggle-btn").click(function() {
+                    // $(this).next(".explanation").slideToggle("slow");
+                    $(".explanation").slideToggle("slow");
+                });
             });
-        });
 
         // Hide and Show Effects
         $(document).ready(function() {
