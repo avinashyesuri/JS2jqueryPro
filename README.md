@@ -20,6 +20,8 @@ All methods explained  in this jquery tutorial
 
 9.slide methods are done
 
+pls checkout video link https://youtu.be/DziGkyZtvY8?si=UNOnps3jjTpDQ7jZ
+
 10.Animate moethods like(animate,delay,chaining, stop,caallback) 
 
 
