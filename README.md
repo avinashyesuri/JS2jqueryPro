@@ -10,6 +10,8 @@ All methods explained  in this jquery tutorial
 
 4.Content Manipulation
 
+
+
 5.DOM Manipulation
 
 6.Wrap Methods
